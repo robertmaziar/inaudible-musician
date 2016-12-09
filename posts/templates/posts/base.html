@@ -11,13 +11,16 @@
 	<body>
 		<div class="page-header">
 			{% if user.is_authenticated %}
-			 	<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+				<span class="username">Welcome, {{ user.get_username }}!</span>
+			 	<a href="" class="top-menu"><span class="glyphicon glyphicon-search"></span></a>
 			 {% endif %}
 			<h1><a href="/">inaudiblemusician.com</a></h1>
+			<h4 >Don't Be <span style="color:#ff533d;">inaudible.</span> Be <span style="color: #ff533d;">Heard.</span></h4>
+
 		</div>
 	 	<div class="content container">
 	        <div class="row">
-	            <div class="col-md-8">
+	            <div class="col-md-12">
 	            {% block content %}
 	            {% endblock %}
 	            </div>

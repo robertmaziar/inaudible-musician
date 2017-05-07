@@ -1,5 +1,9 @@
+body{
+    background-color: #fff;
+}
+
 .page-header {
-    background-color: #233237;
+    background-color: #373737;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -13,7 +17,7 @@ a:hover {
     text-decoration: none;
 }
 .page-header h1 a {
-    color: #18121e;
+    color: #f7882f;
 }
 
 .username {
@@ -28,7 +32,7 @@ a:hover {
 
 h1, h2, h3, h4 {
 	font-family: 'Quicksand', sans-serif;
-            color: #18121e;
+    color: #f7882f;
 }
 
 .date {
@@ -73,7 +77,7 @@ h1, h2, h3, h4 {
 }
 
 .post {
-    background-color: #eeeeee;
+    background-color: #f1f1f1;
     border-radius: 4px;
     margin-bottom: 70px;
     padding: 15px;
@@ -85,4 +89,8 @@ h1, h2, h3, h4 {
 
 .comment {
     margin: 20px 0px 20px 20px;
+}
+
+.pagination-section {
+    text-align: center !important;
 }

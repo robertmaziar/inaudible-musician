@@ -6,16 +6,16 @@
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="{% static 'css/posts.css' %}">
 		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	</head>
 	<body>
 		<div class="page-header">
 			{% if user.is_authenticated %}
 				<span class="username">Welcome, {{ user.get_username }}!</span>
-			 	<a href="" class="top-menu"><span class="glyphicon glyphicon-search"></span></a>
-			 {% endif %}
+			{% else %}
+				<span class="username">Login</span>
+			{% endif %}
 			<h1><a href="/">inaudiblemusician.com</a></h1>
-			<h4 >Don't Be <span style="color:#ff533d;">inaudible.</span> Be <span style="color: #ff533d;">Heard.</span></h4>
+			<h4 >Don't Be <span style="color:#6b7a8f; font-weight: 600">inaudible.</span> Be <span style="color:#6b7a8f; font-weight: 600">Heard.</span></h4>
 
 		</div>
 	 	<div class="content container">
